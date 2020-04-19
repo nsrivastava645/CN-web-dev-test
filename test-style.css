@@ -1,0 +1,56 @@
+/*ul{
+	list-style: none;
+}
+.shown{
+	background-color: purple;
+	color: white;
+	font-size: 1.7rem;
+	border: 1px solid white;
+	cursor: pointer;
+}
+.shown-on-click{
+	display: none;
+}
+.shown:active + .shown-on-click{
+	display: block;
+	transition-duration:unset;
+
+}*/
+input{
+	display:none;
+}
+label:hover{
+	background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+}
+label{
+	display:block;
+	background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+	padding: 7px;
+	border: 1px solid white;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	color: white;
+
+}
+input + label + .content{
+	display: none;
+}
+input:checked + label + .content{
+	padding: 10px;
+	display: block;
+}
+
+i{
+	float: right;
+}
+
+input:checked +label  i{
+	transform: rotate(90deg);
+}
+#collapser{
+	text-decoration: underline;
+	text-align: center;
+	
+}
+
+
